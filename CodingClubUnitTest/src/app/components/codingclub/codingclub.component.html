@@ -1,0 +1,21 @@
+<p>codingclub works!</p>
+<table>
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>No Of Session Conducted</th>
+        <th>No of Session Pending</th>
+        <th>Total Session Planned</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr appRowHighlight *ngFor="let pratices of codingClubPractices">
+           <td>{{pratices.id}}</td>
+           <td>{{pratices.name}}</td>
+           <td>{{pratices.noOfSessionConducted}}</td>
+           <td>{{pratices.noOfSessionPending}}</td>
+           <td>{{pratices.totalSession}}</td>
+        </tr>
+    </tbody>
+</table>
